@@ -1,0 +1,287 @@
+.containers {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.containers > h3 {
+  font-size: 2.2rem;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: Capitalize;
+  letter-spacing: 0.1rem;
+  margin-bottom: 5vh;
+  text-align: center;
+  padding: 2rem 0 1.5rem 0;
+  color: black;
+  text-align: center;
+  @media (max-width: 768px) {
+    font-size: 1.5rem;
+    letter-spacing: 0.01rem;
+    margin-bottom: 1rem;
+    padding: 0 0 1rem 0;
+  }
+}
+.containers .ratings-box {
+  width: 80%;
+  height: 300px;
+  background: purple;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  @media (max-width: 768px) {
+    flex-direction: column;
+    width: 100%;
+    height: 700px;
+  }
+}
+.containers .ratings-box .total-ratings {
+  width: 50%;
+  height: 70%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-right: 1px solid white;
+  padding: 10px;
+  @media (max-width: 768px) {
+    width: 100%;
+    flex-direction: column;
+    border: none;
+  }
+}
+.containers .ratings-box .total-ratings .rating_number {
+  background: white;
+  width: 55px;
+  height: 55px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: black;
+  font-weight: bold;
+  border-radius: 48%;
+  margin-right: 30px;
+  @media (max-width: 768px) {
+    margin: 0 auto 20px;
+  }
+}
+.containers .ratings-box .total-ratings .ratings-details{
+  @media (max-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
+.containers .ratings-box .total-ratings .ratings-details button {
+  background-color: #eeeeee;
+  border-radius: 25px;
+  padding: 8px 20px;
+  border: none;
+  cursor: pointer;
+  font-weight: 700;
+  @media (max-width: 768px) {
+    padding: 15px 35px;
+    margin-top: 10px;
+  }
+}
+.containers .ratings-box .total-ratings .ratings-details .ratings-totals {
+  font-size: 0.9rem;
+  text-transform: capitalize;
+  color: #eeeeee;
+}
+.containers .ratings-box .ratings-graph {
+  width: 50%;
+  height: 75%;
+  margin: 20px;
+  padding: 0 20px;
+  border-radius: 8px;
+  background: #eeeeee;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  @media (max-width: 768px) {
+    width: 95%;
+    height: 50%;
+  }
+}
+.containers .ratings-box .ratings-graph h4 {
+  text-align: center;
+  text-transform: capitalize;
+  margin: 8px 0 0 0;
+  @media (max-width: 768px) {
+    margin-bottom: 8px;
+  }
+}
+.containers .ratings-box .ratings-graph li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.containers .ratings-box .ratings-graph li .ratings_5 {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.containers .ratings-box .ratings-graph li .ratings_5 .ratings_5_details {
+  width: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-transform: capitalize;
+  @media (max-width: 768px) {
+    width: 49%;
+  }
+}
+.containers .ratings-box .ratings-graph li .ratings_5 .ratings_5_details span {
+  font-size: 0.85rem;
+}
+.containers .ratings-box .ratings-graph li .ratings-color-div {
+  width: 100%;
+  height: 6px;
+  background: gray;
+  border-radius: 25px;
+}
+.containers .ratings-box .ratings-graph li .ratings-color-div p {
+  height: 6px;
+  background: crimson;
+  border-radius: 25px;
+  margin: 0;
+}
+
+.containers .reviews-containers {
+  width: 95%;
+  padding: 3rem 0 0 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid rgb(210, 207, 207);
+  @media (max-width: 768px) {
+    padding: 2rem 0 0 0;
+  }
+}
+.containers .reviews-containers h3 {
+  color: black;
+}
+.containers .reviews-containers .reviews-filter-containers {
+  width: 16%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  @media (max-width: 768px) {
+    width: 60%;
+  }
+}
+.containers .reviews-containers .reviews-filter-containers .reviews-filter select {
+  padding: 6px;
+  outline: none;
+  border-radius: 5px;
+  @media (max-width: 768px) {
+    margin-right: 5px;
+  }
+}
+.containers
+  .reviews-containers
+  .reviews-filter-containers
+  .reviews-ratings
+  select {
+  padding: 6px;
+  outline: none;
+  border-radius: 5px;
+}
+
+
+
+/*Review Info*/
+.containers .reviews-info-containers {
+  padding: 1rem 2rem;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  @media (max-width: 768px) {
+    padding: 0;
+  }
+}
+.containers .reviews-info-containers .review-detail {
+  display: flex;
+  flex-direction: column;
+  padding: 1.5rem;
+  text-transform: none;
+  @media (max-width: 768px) {
+    padding: 1.5rem 1rem;
+  }
+}
+.containers .reviews-info-containers .review-detail .review-name-containers {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.containers
+  .reviews-info-containers
+  .review-detail
+  .review-name-containers
+  .review-logo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  align-items: center;
+}
+.containers
+  .reviews-info-containers
+  .review-detail
+  .review-name-containers
+  .review-logo
+  .review-name-time {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  align-items: flex-start;
+  margin-left: 10px;
+}
+.containers
+  .reviews-info-containers
+  .review-detail
+  .review-name-containers
+  .review-logo
+  .review-name-time
+  span {
+  font-size: 0.75rem;
+  padding-top: 5px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+.containers
+  .reviews-info-containers
+  .review-detail
+  .review-name-containers
+  .review-logo
+  .review-name-time
+  h4 {
+  margin: 0;
+  font-size: 0.9rem;
+}
+.containers .reviews-info-containers .review-detail .review-name-containers img {
+  width: 35px;
+  height: 35px;
+  border-radius: 50px;
+}
+.containers .reviews-info-containers .review-detail .review-desc {
+  font-size: 0.8rem;
+  font-family: sans-serif;
+  padding: 0.8rem 0;
+}
+.containers .reviews-info-containers .review-detail .review-reaction {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  font-size: 0.75rem;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+.containers .reviews-info-containers .review-detail .review-reaction span {
+  margin: 0 10px 3px 10px;
+}
